@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
+published: false   # 👈 add this line
 nav: false
 nav_order: 1
 pagination:
