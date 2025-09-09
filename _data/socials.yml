@@ -24,7 +24,7 @@ email: h975894552@gmail.com # your email address
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
+linkedin_username: junyun-huang-841804234
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
@@ -34,7 +34,7 @@ email: h975894552@gmail.com # your email address
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: https://scholar.google.com/citations?hl=en&user=w9JsWTIAAAAJ&view_op=list_works&sortby=pubdate # your Google Scholar ID
+scholar_userid: w9JsWTIAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
@@ -51,6 +51,6 @@ scholar_userid: https://scholar.google.com/citations?hl=en&user=w9JsWTIAAAAJ&vie
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 # custom_social: # can be any name here other than the ones already defined above
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+  # logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
+  # title: Custom Social
+  # url: https://www.alberteinstein.com/
