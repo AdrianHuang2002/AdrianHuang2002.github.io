@@ -1,7 +1,8 @@
 ---
 layout: page
 title: submenus
-nav: true
+published: false   # 👈 add this line
+nav: false
 nav_order: 8
 dropdown: true
 children:
