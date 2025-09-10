@@ -1,97 +1,135 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Albert Einstein
+#     - name: Date of Birth
+#       value: 14th March 1879
+#     - name: Languages
+#       value: English, German
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: PhD
+#       institution: University of Zurich, Zurich, Switzerland
+#       year: 1905
+#       description:
+#         - Description 1.
+#         - Description 2.
+#         - title: Description 3.
+#           contents:
+#             - Sub-description 1.
+#             - Sub-description 2.
+#     - title: Federal teaching diploma
+#       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+#       year: 1900
+#       description:
+#         - Description 1.
+#         - Description 2.
+
+# _data/cv.yml
 
 - title: Experience
-  type: time_table
+  type: experience
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Student
+      institution: Embodied AGI Lab, UMass Amherst
+      year: 2025/09 — Present
+      mentor:
+        name: Lixing Fang
+        url: https://owenowl.github.io/
+      logo: umass.png
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Project: Humanoid Robot"
+
+    - title: Research Student
+      institution: GAMMA Lab, University of Maryland
+      year: 2024/09 — Present
+      mentor:
+        name: Xijun Wang
+        url: https://xijun-cs.github.io/
+      logo: umd.png
       description:
-        - Description 1.
-        - Description 2.
+        - "Project: VLM Quantization (co-first author, submitted to ICCV 2025)"
+        - "Project: Autonomous Driving Dataset"
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Research Student
+      institution: Dickerson Lab, University of Maryland
+      year: 2024/02 — 2024/06
+      mentor:
+        name: Ryan Sullivan
+        url: https://ryannavillus.github.io/
+      logo: umd.png
       description:
+        - "Project: Syllabus Project"
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Research Intern
+      institution: GDIIST, China
+      year: 2024/06 — 2024/08; 2023/06 — 2023/08
+      mentor:
+        name: Bin Wu
+        url: https://www.gdiist.cn/en/research/member_detail/277
+      logo: GDIIST.png
+      description:
+        - "Project: LLM fine-tuning & RAG eval"
+        - "Project: LLM pre-processing"
 
-- title: Open Source Projects
-  type: time_table
+    - title: Student Worker
+      institution: GAMMA Lab, University of Maryland
+      year: 2022/06 — 2022/07
+      supervisors:
+        - name: Xijun Wang
+          url: https://xijun-cs.github.io/
+        - name: Dinesh Manocha
+          url: https://www.cs.umd.edu/people/dmanocha
+      logo: umd.png
+      description:
+        - "Project: Unmanned Aerial Vehicle Video Recognition"
+
+- title: Education
+  type: experience   # 👈 important — same as Experience
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: M.S., Computer Science
+      institution: University of Massachusetts Amherst
+      year: 2025/09 — Present
+      logo: umass.png
+    - title: B.S., Computer Science
+      department: Minor in Mathematics
+      institution: University of Maryland
+      year: 2021/08 — 2025/05
+      logo: umd.png
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items:
+#         - Nobel Prize in Physics
+#         - Matteucci Medal
+#     - year: 2029
+#       items:
+#         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

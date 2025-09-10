@@ -2,35 +2,55 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>University of Massachusetts Amherst</a>. 
+subtitle: University of Massachusetts Amherst
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p>740 N Pleasant St</p>
     <p>Amherst, MA 01003</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+# Page widgets
+selected_papers: false   # shows selected publications list if true
+social: true             # social icons footer
 
+# Optional widgets below (left disabled)
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-## Education
-{% include cv.html section="Education" %}
+I’m a first-year M.S. student in Computer Science at UMass Amherst, where I work with the
+[Embodied AGI Group](https://embodied-agi.cs.umass.edu/people/) led by
+[Chuang Gan](https://people.csail.mit.edu/ganchuang/).
+Previously, I was part of the UMD [Gamma Group](https://gamma.umd.edu/) mentored by
+[Xijun Wang](https://xijun-cs.github.io/) and under the guidance of
+[Dinesh Manocha](https://www.cs.umd.edu/people/dmanocha). I’ve also collaborated with
+[John P. Dickerson](https://jpdickerson.com/) in the Dickerson Lab.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My current research interests are primarily centered on **humanoid robots**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+## 📚 Publications
+{% include selected_papers.liquid %}
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## 💼 Experience
+{% assign exp = site.data.cv | where: "title", "Experience" | first %}
+{% if exp %}
+  {% include cv/experience.liquid items=exp.contents %}
+{% endif %}
+
+## 🎓 Education
+{% assign edu = site.data.cv | where: "title", "Education" | first %}
+{% if edu %}
+  {% include cv/experience.liquid items=edu.contents %}
+{% endif %}
+
+
