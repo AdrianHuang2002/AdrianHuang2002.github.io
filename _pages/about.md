@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>740 N Pleasant St</p>
     <p>Amherst, MA 01003</p>
 
 # Page widgets
