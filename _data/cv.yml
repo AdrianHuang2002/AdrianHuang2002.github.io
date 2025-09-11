@@ -36,9 +36,9 @@
     - title: Research Student
       institution: Embodied AGI Lab, UMass Amherst
       year: 2025/09 — Present
-      mentor:
-        name: Lixing Fang
-        url: https://owenowl.github.io/
+      # mentor:
+      #   name: Lixing Fang
+      #   url: https://owenowl.github.io/
       logo: umass.png
       description:
         - "Project: Humanoid Robot"
@@ -46,9 +46,9 @@
     - title: Research Student
       institution: GAMMA Lab, University of Maryland
       year: 2024/09 — Present
-      mentor:
-        name: Xijun Wang
-        url: https://xijun-cs.github.io/
+      # mentor:
+      #   name: Xijun Wang
+      #   url: https://xijun-cs.github.io/
       logo: umd.png
       description:
         - "Project: VLM Quantization"
@@ -57,9 +57,9 @@
     - title: Research Student
       institution: Dickerson Lab, University of Maryland
       year: 2024/02 — 2024/06
-      mentor:
-        name: Ryan Sullivan
-        url: https://ryannavillus.github.io/
+      # mentor:
+      #   name: Ryan Sullivan
+      #   url: https://ryannavillus.github.io/
       logo: umd.png
       description:
         - "Project: Syllabus Project"
@@ -67,9 +67,9 @@
     - title: Research Intern
       institution: GDIIST, China
       year: 2024/06 — 2024/08; 2023/06 — 2023/08
-      mentor:
-        name: Bin Wu
-        url: https://www.gdiist.cn/en/research/member_detail/277
+      # mentor:
+      #   name: Bin Wu
+      #   url: https://www.gdiist.cn/en/research/member_detail/277
       logo: GDIIST.png
       description:
         - "Project: LLM fine-tuning & RAG eval"
@@ -78,11 +78,11 @@
     - title: Student Worker
       institution: GAMMA Lab, University of Maryland
       year: 2022/06 — 2022/07
-      supervisors:
-        - name: Xijun Wang
-          url: https://xijun-cs.github.io/
-        - name: Dinesh Manocha
-          url: https://www.cs.umd.edu/people/dmanocha
+      # supervisors:
+      #   - name: Xijun Wang
+      #     url: https://xijun-cs.github.io/
+      #   - name: Dinesh Manocha
+      #     url: https://www.cs.umd.edu/people/dmanocha
       logo: umd.png
       description:
         - "Project: Unmanned Aerial Vehicle Video Recognition"
