@@ -1,0 +1,71 @@
+{% comment %} _includes/cv/experience.liquid {% endcomment %}
+<div class="cv-experience">
+  {% for item in include.items %}
+    <div class="cv-item d-flex mb-4">
+      {% if item.logo %}
+        <div class="mr-3" style="min-width:64px">
+          <img
+            src="{{ '/assets/img/cv/' | relative_url }}{{ item.logo }}"
+            alt="{{ item.institution | default: item.company }} logo"
+            width="64" height="64"
+            style="object-fit:contain;border-radius:50%;"
+          >
+        </div>
+      {% endif %}
+
+      <div>
+        <div class="h5 m-0">
+          {{ item.title }}{% if item.institution %}, {% if item.company_url %}<a href="{{ item.company_url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}{% endif %}
+        </div>
+
+        {% if item.department %}
+            <div class="text-muted">
+                {{ item.department }}
+            </div>
+        {% endif %}
+
+        {% if item.year %}
+          <div class="text-muted">{{ item.year }}</div>
+        {% endif %}
+
+        {% if item.mentor %}
+          <div>
+            Mentor:
+            {% if item.mentor.url %}
+              <a href="{{ item.mentor.url }}">{{ item.mentor.name }}</a>
+            {% else %}
+              {{ item.mentor }}
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if item.supervisors %}
+          <div>
+            Supervisor{% if item.supervisors.size > 1 %}s{% endif %}:
+            {% for s in item.supervisors %}
+              {% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}
+              {% unless forloop.last %}{% if forloop.rindex0 == 1 %} & {% else %}, {% endif %}{% endunless %}
+            {% endfor %}
+          </div>
+        {% elsif item.supervisor %}
+          <div>
+            Supervisor:
+            {% if item.supervisor.url %}
+              <a href="{{ item.supervisor.url }}">{{ item.supervisor.name }}</a>
+            {% else %}
+              {{ item.supervisor }}
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if item.description %}
+          <ul class="mb-0">
+            {% for line in item.description %}
+              <li>{{ line }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
