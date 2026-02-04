@@ -178,7 +178,7 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
+    <div class="periodical journal-line">
       {{ periodical | strip }}{% if entry.scripts %}{% assign periodical_stripped = periodical | strip %}{% if periodical_stripped != "" %}, {% endif %}<a href="{{ entry.scripts }}">Scripts</a>{% endif %}
     </div>
     <div class="periodical">

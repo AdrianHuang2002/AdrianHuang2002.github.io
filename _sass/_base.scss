@@ -192,6 +192,20 @@ ul.task-list input[type="checkbox"] {
 
 // Profile
 
+// About page: image on right, aligned with whole section (name + bio)
+.about-top-section {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.profile.profile-side.float-right {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .profile {
   width: 100%;
 
@@ -777,6 +791,12 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+      }
+
+      // Journal/venue line (e.g. "Under Review", "🏆 Outstanding Paper...")
+      .periodical.journal-line,
+      .periodical.journal-line em {
+        color: #c0392b !important; // red; or e.g. #c9a227 for gold
       }
 
       .author {
