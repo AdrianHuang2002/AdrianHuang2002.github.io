@@ -192,6 +192,15 @@ ul.task-list input[type="checkbox"] {
 
 // Profile
 
+// About page: image on right, aligned with whole section (name + bio)
+.about-top-section {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .profile {
   width: 100%;
 
