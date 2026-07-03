@@ -53,12 +53,15 @@
     <!-- JavaScripts -->
     {% include scripts.liquid %}
 
-    <!-- ClustrMaps visitor globe -->
-    <script
-      type="text/javascript"
-      id="clstr_globe"
-      async
-      src="https://clustrmaps.com/globe.js?d=WdZUFrVngO8AZTcCdeCPigGuORD1xGUr8v5lWGbGixE">
-    </script>
+    {% if site.enable_clustrmaps_analytics and site.clustrmaps_analytics %}
+      <!-- ClustrMaps visitor globe -->
+      <div id="clustrmaps-widget"></div>
+      <script
+        type="text/javascript"
+        id="clstr_globe"
+        async
+        src="https://clustrmaps.com/globe.js?d={{ site.clustrmaps_analytics }}">
+      </script>
+    {% endif %}
   </body>
 </html>
